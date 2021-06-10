@@ -119,8 +119,8 @@ function requireConfig() {
 		//获取 Cookies
 		$.cookiesArr = []
 		if ($.isNode()) {
-			//Node.js用户请在jdCookie.js处填写京东ck;
-			const jdCookieNode = require('./jdCookie.js');
+			//Node.js用户请在Wake2020_daily_scripts_jdCookie.js处填写京东ck;
+			const jdCookieNode = require('./Wake2020_daily_scripts_jdCookie.js');
 			Object.keys(jdCookieNode).forEach((item) => {
 				if (jdCookieNode[item]) {
 					$.cookiesArr.push(jdCookieNode[item])

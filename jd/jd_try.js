@@ -26,9 +26,9 @@ const args = {
     // 是否通知
     jdNotify: false,
     // 每次获取商品数量
-    pageSize: 12,
+    pageSize: 10,
     // 试用商铺类型
-    cidsList: ["全部商品", "更多惊喜"],
+    cidsList: ["全部商品"],
     // 试用类型
     typeList: ["普通试用", "闪电试用"],
     // 商品过滤关键字

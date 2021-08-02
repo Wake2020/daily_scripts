@@ -42,7 +42,7 @@ const args = {
 	maxSupplyCount: 15,
 	white_price_limit: 139,
 	limit_day: 1,
-	useful_account:["沧海一芥","jd_fCzLhBsWkauR","9607988-10183045"]
+	useful_account:["沧海一芥","jd_fCzLhBsWkauR","9607988-10183045","q411677988","jd_vyIhwAYvpxbD","jd_426de6eec3e77","jd_sJoJjeWStojD","jd_mInXFwietiqS","jd_tfRwBwEWlANI","jd_asKULHkBvlcb","jd_lIMdoeEfiCBd","jd_fmVtYumwKSrp","jd_539a50e69944a"]
 }
 
 const cidsMap = {

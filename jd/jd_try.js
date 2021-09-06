@@ -43,7 +43,7 @@ let args_xh = {
      * */
     // TODO: tab ids as array(support multi tabIds)
     // tabId: process.env.JD_TRY_TABID && process.env.JD_TRY_TABID.split('@').map(Number) || [1],
-    tabId: process.env.JD_TRY_TABID || 1,
+    tabId: process.env.JD_TRY_TABID || 1,2,3,4,5
     /*
      * 试用商品标题过滤
      * 可设置环境变量：JD_TRY_TITLEFILTERS，关键词与关键词之间用@分隔

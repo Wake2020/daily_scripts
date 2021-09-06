@@ -219,7 +219,7 @@ function try_feedsList(tabId, page){
                                         $.isPush = false;
                                         for(let filters of args_xh.titleFilters){
                                             if(parseFloat(data.data.feedList[i].supplyNum) > args_xh.maxSupplyNum && data.data.feedList[i].supplyNum !== null){
-                                                $.isPush = false;
+                                                $.isPush = true;
                                                 console.log(`商品已过滤，提供申请的份数大于预设申请的份数 \n`)
                                                 break;
                                             }
@@ -229,7 +229,7 @@ function try_feedsList(tabId, page){
                                                 break;
                                             }
                                             if(parseFloat(data.data.feedList[i].trialPrice) < args_xh.trialPrice){
-                                                $.isPush = false;
+                                                $.isPush = true;
                                                 console.log(`商品已过滤，商品价格小于预设价格 \n`)
                                                 break;
                                             }

@@ -218,7 +218,7 @@ function try_feedsList(tabId, page){
                                         console.log(`检测第 ${page} 页 第 ${i + 1} 个商品\n${data.data.feedList[i].skuTitle}`)
                                         $.isPush = false;
                                         for(let filters of args_xh.titleFilters){
-                                            if(parseFloat(data.data.feedList[i].supplyNum) > args_xh.maxSupplyNum && data.data.feedList[i].supplyNum !== null){
+                                            if(parseFloat(data.data.feedList[i].supplyNum) < args_xh.maxSupplyNum && data.data.feedList[i].supplyNum !== null){
                                                 $.isPush = true;
                                                 console.log(`商品已过滤，提供申请的份数大于预设申请的份数 \n`)
                                                 break;
@@ -228,7 +228,7 @@ function try_feedsList(tabId, page){
                                                 console.log(`商品被过滤，已申请试用人数大于预设人数 \n`)
                                                 break;
                                             }
-                                            if(parseFloat(data.data.feedList[i].trialPrice) < args_xh.trialPrice){
+                                            if(parseFloat(data.data.feedList[i].trialPrice) > args_xh.trialPrice){
                                                 $.isPush = true;
                                                 console.log(`商品已过滤，商品价格小于预设价格 \n`)
                                                 break;
